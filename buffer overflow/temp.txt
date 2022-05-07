@@ -1,0 +1,10 @@
+bool password_compare(char* real, char* submitted){
+    for (int i = 0; i < strlen(real); i++)
+    {
+        if(*real ++ != *submitted){
+            return false;
+        }
+        return true;
+    }
+    
+}
